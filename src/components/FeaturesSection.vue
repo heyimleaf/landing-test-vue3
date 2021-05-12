@@ -35,6 +35,7 @@
 </template>
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 @Options({
   components: {},

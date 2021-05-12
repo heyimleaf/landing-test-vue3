@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "bootstrap";
 import "./assets/styles/main.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
+
 import {
   faMobileAlt,
   faLemon,

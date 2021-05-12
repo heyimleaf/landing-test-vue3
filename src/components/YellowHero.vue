@@ -1,7 +1,7 @@
 <template>
   <section class="yellow-hero">
     <div class="container pt-5">
-      <VueSlickCarousel :dots="true" v-bind="heroYellow">
+      <VueSlickCarousel :dots="true">
         <div
           class="item-yellow"
           v-for="(item, key) in contentSliders"
@@ -16,7 +16,7 @@
               </h2>
 
               <p>
-                {{ item.description }}
+                {{ item.content }}
               </p>
 
               <div class="icons-aside">
@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-6 order-1 order-lg-2 hero-img">
-              <img src="../assets/images/ipad-white.png" alt="" />
+              <img :src="item.image" />
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@
     </div>
   </section>
 </template>
-/
+
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 
@@ -44,28 +44,31 @@ import { Options, Vue } from "vue-class-component";
 export default class YellowHero extends Vue {
   contentSliders = [
     {
-      title: "lorem",
-      subtitle: "ipsum",
-      content: "lorem ipsum dot",
+      title: "Inspire your inspiration",
+      subtitle:
+        "Simple to use for your app, products showcase and your inspiration",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit ",
+      image: require("../assets/images/ipad-white.png"),
     },
 
-    {
-      title: "lorem",
-      subtitle: "ipsum",
-      content: "lorem ipsum dot",
-    },
+    //   {
+    //   title: "Inspire your inspiration",
+    //   subtitle:
+    //     "Simple to use for your app, products showcase and your inspiration",
+    //   content:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit ",
+    //   image: require("../assets/images/ipad-white.png"),
+    // },
 
-    {
-      title: "lorem",
-      subtitle: "ipsum",
-      content: "lorem ipsum dot",
-    },
-
-    {
-      title: "lorem",
-      subtitle: "ipsum",
-      content: "lorem ipsum dot",
-    },
+    //   {
+    //   title: "Inspire your inspiration",
+    //   subtitle:
+    //     "Simple to use for your app, products showcase and your inspiration",
+    //   content:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit ",
+    //   image: require("../assets/images/ipad-white.png"),
+    // },
   ];
 
   heroYellow = {
