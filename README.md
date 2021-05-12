@@ -1,24 +1,21 @@
-# landing-2b-test
+# Landing Page Example using Vue 3
 
-## Project setup
-```
-npm install
-```
+Simple landing page using SASS, Bootstrap 5 and Font Awesome.
 
-### Compiles and hot-reloads for development
+## How to run that?
+
 ```
-npm run serve
+At the terminal, type npm install. After load all dependencies, type on terminal npm run serve.
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Check and fix files and lints
+
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
