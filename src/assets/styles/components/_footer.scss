@@ -1,0 +1,20 @@
+.footer {
+  background: $black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    padding-top: 135px;
+    padding-bottom: 140px;
+    text-align: left;
+  }
+  p {
+    color: $gray;
+  }
+  a {
+    display: block;
+    color: $gray;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+}

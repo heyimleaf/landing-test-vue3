@@ -3,6 +3,7 @@
   <yellow-hero />
   <features-section />
   <newsletter />
+  <Footer />
 </template>
 
 <script lang="ts">
@@ -11,6 +12,7 @@ import NavbarHeader from "./components/NavbarHeader.vue";
 import YellowHero from "./components/YellowHero.vue";
 import FeaturesSection from "./components/FeaturesSection.vue";
 import Newsletter from "./components/Newsletter.vue";
+import Footer from "./components/Footer.vue";
 
 @Options({
   components: {
@@ -18,6 +20,7 @@ import Newsletter from "./components/Newsletter.vue";
     YellowHero,
     FeaturesSection,
     Newsletter,
+    Footer,
   },
 })
 export default class App extends Vue {}

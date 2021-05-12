@@ -1,7 +1,9 @@
 .navbar {
   background: $yellow;
+  position: fixed;
+  width: 100%;
+
   @include media-breakpoint-up(lg) {
-    padding-top: 52px;
     display: block;
   }
   .navbar-toggler-icon {
