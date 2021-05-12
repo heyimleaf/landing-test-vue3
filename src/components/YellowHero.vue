@@ -1,36 +1,32 @@
 <template>
   <section class="yellow-hero">
     <div class="container pt-5">
-      <VueSlickCarousel :dots="true">
-        <div
-          class="item-yellow"
-          v-for="(item, key) in contentSliders"
-          :key="key"
-        >
-          <div class="row">
-            <div class="col-12 col-lg-6 order-2 content-hero">
-              <h1>{{ item.title }}</h1>
+      <!-- <VueSlickCarousel :dots="true"> -->
+      <div class="item-yellow" v-for="(item, key) in contentSliders" :key="key">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-2 content-hero">
+            <h1>{{ item.title }}</h1>
 
-              <h2>
-                {{ item.subtitle }}
-              </h2>
+            <h2>
+              {{ item.subtitle }}
+            </h2>
 
-              <p>
-                {{ item.content }}
-              </p>
+            <p>
+              {{ item.content }}
+            </p>
 
-              <div class="icons-aside">
-                <fa :icon="['fab', 'apple']" />
-                <fa :icon="['fab', 'android']" />
-                <fa :icon="['fab', 'windows']" />
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 order-1 order-lg-2 hero-img">
-              <img :src="item.image" />
+            <div class="icons-aside">
+              <fa :icon="['fab', 'apple']" />
+              <fa :icon="['fab', 'android']" />
+              <fa :icon="['fab', 'windows']" />
             </div>
           </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-2 hero-img">
+            <img :src="item.image" />
+          </div>
         </div>
-      </VueSlickCarousel>
+      </div>
+      <!-- </VueSlickCarousel> -->
     </div>
   </section>
 </template>
