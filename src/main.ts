@@ -9,7 +9,7 @@ import {
   faFolder,
   faCode,
   faEnvelope,
-  faFlag,
+  faBookmark,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faWindows,
@@ -24,7 +24,7 @@ library.add(
   faFolder,
   faCode,
   faEnvelope,
-  faFlag,
+  faBookmark,
   faWindows,
   faApple,
   faAndroid

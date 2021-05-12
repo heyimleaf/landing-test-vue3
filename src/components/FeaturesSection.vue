@@ -2,39 +2,34 @@
   <section id="features">
     <div class="container">
       <div class="row">
-        <slick-slide ref="slick" :options="slickFriends">
-          <div class="slider-item">
-            <div class="col-12 text-center">
-              <h3>Tinyone features</h3>
-              <p class="mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-                aspernatur necessitatibus sed, cumque reprehenderit molestiae
-                adipisci eligendi quidem sint alias ad dignissimos possimus!
-                Maiores in incidunt consectetur? Voluptate, saepe fuga.
-              </p>
-            </div>
-            <div
-              class="col-12 col-lg-4 mb-5"
-              v-for="item in 6"
-              :key="item.index"
-            >
-              <div class="row">
-                <div class="col-3">
-                  <div class="icon-aside text-center">
-                    <fa :icon="['fas', 'mobile-alt']" />
-                  </div>
-                </div>
-                <div class="col-9 box-content">
-                  <h4>Fully Responsive</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent vitae eros eget tellus tristique bibendum.
-                  </p>
-                </div>
+        <div class="col-12 text-center content-feature">
+          <h3>Tinyone features</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+            aspernatur necessitatibus sed, cumque reprehenderit molestiae
+            adipisci eligendi quidem sint alias ad dignissimos possimus! Maiores
+            in incidunt consectetur? Voluptate, saepe fuga.
+          </p>
+        </div>
+        <div
+          class="col-12 col-lg-4 box-item"
+          v-for="(item, key) in boxesFeatures"
+          :key="key"
+        >
+          <div class="row">
+            <div class="col-4">
+              <div class="icon-aside text-center">
+                <fa :icon="item.icon" />
               </div>
             </div>
+            <div class="col-8 box-content">
+              <h4>{{ item.title }}</h4>
+              <p>
+                {{ item.content }}
+              </p>
+            </div>
           </div>
-        </slick-slide>
+        </div>
       </div>
     </div>
   </section>
@@ -45,5 +40,46 @@ import { Options, Vue } from "vue-class-component";
 @Options({
   components: {},
 })
-export default class FeaturesSection extends Vue {}
+export default class FeaturesSection extends Vue {
+  boxesFeatures = [
+    {
+      icon: "mobile-alt",
+      title: "Fully Responsive",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.",
+    },
+
+    {
+      icon: "lemon",
+      title: "Fully Layered PSD",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.",
+    },
+
+    {
+      icon: "folder",
+      title: "Font Awesome Icons",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.",
+    },
+    {
+      icon: "code",
+      title: "HTML5 & CSS3",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.",
+    },
+    {
+      icon: "envelope",
+      title: "Email Template",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.",
+    },
+    {
+      icon: "bookmark",
+      title: "Free to download",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.",
+    },
+  ];
+}
 </script>
