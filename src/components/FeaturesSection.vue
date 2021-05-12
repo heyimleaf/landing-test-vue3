@@ -5,10 +5,9 @@
         <div class="col-12 text-center content-feature">
           <h3>Tinyone features</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-            aspernatur necessitatibus sed, cumque reprehenderit molestiae
-            adipisci eligendi quidem sint alias ad dignissimos possimus! Maiores
-            in incidunt consectetur? Voluptate, saepe fuga.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis
+            venenatis.
           </p>
         </div>
         <div

@@ -15,6 +15,10 @@ import {
   faWindows,
   faApple,
   faAndroid,
+  faFacebook,
+  faTwitter,
+  faGooglePlus,
+  faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
 import App from "./App.vue";
 
@@ -27,7 +31,11 @@ library.add(
   faBookmark,
   faWindows,
   faApple,
-  faAndroid
+  faAndroid,
+  faFacebook,
+  faTwitter,
+  faGooglePlus,
+  faPinterest
 );
 
 createApp(App).component("fa", FontAwesomeIcon).mount("#app");
