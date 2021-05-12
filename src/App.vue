@@ -1,27 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <navbar-header />
+  <yellow-hero />
+  <features-section />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+import NavbarHeader from "./components/NavbarHeader.vue";
+import YellowHero from "./components/YellowHero.vue";
+import FeaturesSection from "./components/FeaturesSection.vue";
 
 @Options({
   components: {
-    HelloWorld,
+    NavbarHeader,
+    YellowHero,
+    FeaturesSection,
   },
 })
 export default class App extends Vue {}
 </script>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
